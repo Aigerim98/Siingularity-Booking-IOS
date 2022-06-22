@@ -28,6 +28,10 @@ class ProfileViewController: UIViewController {
         self.navigationController?.popToRootViewController(animated: true)
     }
     
+    @IBAction func bookRoomTapped(_ sender: UIButton) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "BookRoomViewController") as! BookRoomViewController
+        navigationController?.pushViewController(vc, animated: true)
+    }
     func loadUser() {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let managedContext = appDelegate.persistentContainer.viewContext

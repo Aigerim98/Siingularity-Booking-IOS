@@ -281,6 +281,9 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                     <color key="baseForegroundColor" red="0.046667523682117462" green="0.069484055042266846" blue="0.12237366288900375" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="bookRoomTapped:" destination="YbI-GS-Sba" eventType="touchUpInside" id="hOK-w3-2Ee"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gjd-vI-IZX">
                                 <rect key="frame" x="328" y="44" width="70" height="30"/>
@@ -317,6 +320,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bUi-WE-ut2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3692.753623188406" y="97.767857142857139"/>
+        </scene>
+        <!--Book Room View Controller-->
+        <scene sceneID="KQE-wV-FE9">
+            <objects>
+                <viewController storyboardIdentifier="BookRoomViewController" id="ZYc-rU-nPQ" customClass="BookRoomViewController" customModule="SingularityBooking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hmt-or-gON">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="0bO-NW-PUB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cxG-LR-8yE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4349" y="108"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FN2-iB-24R">
