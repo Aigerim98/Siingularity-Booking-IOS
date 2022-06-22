@@ -37,8 +37,10 @@ class SignUpViewController: UIViewController {
             let email = emailTextField.text!
             let password = passwordTextField.text!
             saveUser(firstName, lastName, email, password)
-            
-            let vc = ProfileViewController()
+            //print(firstName)
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
+            vc.firstName = firstName
+            vc.lastName = lastName
             navigationController?.pushViewController(vc, animated: true)
         }
     }
@@ -54,6 +56,7 @@ class SignUpViewController: UIViewController {
             
             return "Please fill all fields"
         }
+        
         let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
         if Utilities.isPasswordValid(cleanedPassword) == false {

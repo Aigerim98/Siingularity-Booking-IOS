@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		020B83B128630FD3003FD5B9 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020B83AF28630FD3003FD5B9 /* Utilities.swift */; };
 		023B5E292862EE14004A30C4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B5E282862EE14004A30C4 /* ProfileViewController.swift */; };
-		023B5E2F2862F25A004A30C4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B5E2D2862F25A004A30C4 /* Constants.swift */; };
-		023B5E302862F25A004A30C4 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B5E2E2862F25A004A30C4 /* Utilities.swift */; };
 		026C33932862E942002E75CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C33922862E942002E75CB /* AppDelegate.swift */; };
 		026C33952862E942002E75CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C33942862E942002E75CB /* SceneDelegate.swift */; };
 		026C33972862E942002E75CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C33962862E942002E75CB /* ViewController.swift */; };
@@ -22,9 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		020B83AF28630FD3003FD5B9 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		023B5E282862EE14004A30C4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		023B5E2D2862F25A004A30C4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../../../../Downloads/CustomLoginDemo/CustomLoginDemo/Helpers/Constants.swift; sourceTree = "<group>"; };
-		023B5E2E2862F25A004A30C4 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = ../../../../Downloads/CustomLoginDemo/CustomLoginDemo/Helpers/Utilities.swift; sourceTree = "<group>"; };
 		026C338F2862E942002E75CB /* SingularityBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingularityBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		026C33922862E942002E75CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		026C33942862E942002E75CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,8 +50,7 @@
 		023B5E2C2862F244004A30C4 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				023B5E2D2862F25A004A30C4 /* Constants.swift */,
-				023B5E2E2862F25A004A30C4 /* Utilities.swift */,
+				020B83AF28630FD3003FD5B9 /* Utilities.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -178,9 +175,8 @@
 				026C33952862E942002E75CB /* SceneDelegate.swift in Sources */,
 				023B5E292862EE14004A30C4 /* ProfileViewController.swift in Sources */,
 				026C339D2862E942002E75CB /* SingularityBooking.xcdatamodeld in Sources */,
-				023B5E302862F25A004A30C4 /* Utilities.swift in Sources */,
+				020B83B128630FD3003FD5B9 /* Utilities.swift in Sources */,
 				026C33AA2862E993002E75CB /* SignUpViewController.swift in Sources */,
-				023B5E2F2862F25A004A30C4 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
