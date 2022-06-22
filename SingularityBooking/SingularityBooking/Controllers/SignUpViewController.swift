@@ -11,6 +11,7 @@ import CoreData
 class SignUpViewController: UIViewController {
 
     var users: [NSManagedObject] = []
+    var mails: [String] = []
     
     @IBOutlet var firstNameTextField: UITextField!
     @IBOutlet var lastNameTextField: UITextField!
@@ -37,11 +38,24 @@ class SignUpViewController: UIViewController {
             let email = emailTextField.text!
             let password = passwordTextField.text!
             saveUser(firstName, lastName, email, password)
-            //print(firstName)
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
-            vc.firstName = firstName
-            vc.lastName = lastName
-            navigationController?.pushViewController(vc, animated: true)
+            print(mails)
+            if mails.contains(email){
+                let alert = UIAlertController(title: "Account Exists", message: "There is an account with this email address.", preferredStyle: .alert)
+                           // add an action (button)
+                           //alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                           let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) {
+                                   UIAlertAction in
+                                   _ = self.navigationController?.popViewController(animated: true)
+                               }
+                           alert.addAction(okAction)
+                           // show the alert
+                           self.present(alert, animated: true, completion: nil)
+            } else {
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
+                vc.firstName = firstName
+                vc.lastName = lastName
+                navigationController?.pushViewController(vc, animated: true)
+            }
         }
     }
 
@@ -58,10 +72,16 @@ class SignUpViewController: UIViewController {
         }
         
         let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let cleanedEmail = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
         if Utilities.isPasswordValid(cleanedPassword) == false {
             return "PLease make sure your password is at least 8 charactes, contains a special character and number"
         }
+        
+        if Utilities.isEmailValid(cleanedEmail) == false {
+            return "Invalid email address"
+        }
+
         return nil
     }
     
@@ -94,6 +114,7 @@ class SignUpViewController: UIViewController {
         do {
             try managedContext.save()
             users.append(user)
+            mails.append(email)
         } catch let error as NSError {
             print("Could not save")
         }

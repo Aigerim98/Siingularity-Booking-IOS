@@ -11,7 +11,7 @@ import UIKit
 
 class Utilities {
     
-    static func styleTextField(_ textfield:UITextField) {
+    static func styleTextField(_ textfield: UITextField) {
         
         // Create the bottom line
         let bottomLine = CALayer()
@@ -28,7 +28,7 @@ class Utilities {
         
     }
     
-    static func styleFilledButton(_ button:UIButton) {
+    static func styleFilledButton(_ button: UIButton) {
         
         // Filled rounded corner style
         button.backgroundColor = UIColor.init(red: 48/255, green: 173/255, blue: 99/255, alpha: 1)
@@ -45,10 +45,14 @@ class Utilities {
         button.tintColor = UIColor.black
     }
     
-    static func isPasswordValid(_ password : String) -> Bool {
-        
+    static func isPasswordValid(_ password: String) -> Bool {
+        //8 character, one special character
         let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
         return passwordTest.evaluate(with: password)
     }
     
+    static func isEmailValid(_ email: String) -> Bool {
+        let emailTest = NSPredicate(format: "SELF MATCHES %@", "^[\\p{L}0-9!#$%&'*+\\/=?^_`{|}~-][\\p{L}0-9.!#$%&'*+\\/=?^_`{|}~-]{0,63}@[\\p{L}0-9-]+(?:\\.[\\p{L}0-9-]{2,7})*$")
+        return emailTest.evaluate(with: email)
+    }
 }
