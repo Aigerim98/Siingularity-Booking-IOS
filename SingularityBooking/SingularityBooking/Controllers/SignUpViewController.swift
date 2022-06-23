@@ -11,7 +11,7 @@ import CoreData
 class SignUpViewController: UIViewController {
 
     var users: [NSManagedObject] = []
-    var mails: [String] = []
+    var userMails: [String] = []
     
     @IBOutlet var firstNameTextField: UITextField!
     @IBOutlet var lastNameTextField: UITextField!
@@ -37,25 +37,10 @@ class SignUpViewController: UIViewController {
             let lastName = lastNameTextField.text!
             let email = emailTextField.text!
             let password = passwordTextField.text!
-            saveUser(firstName, lastName, email, password)
-            print(mails)
-            if mails.contains(email){
-                let alert = UIAlertController(title: "Account Exists", message: "There is an account with this email address.", preferredStyle: .alert)
-                           // add an action (button)
-                           //alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-                           let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) {
-                                   UIAlertAction in
-                                   _ = self.navigationController?.popViewController(animated: true)
-                               }
-                           alert.addAction(okAction)
-                           // show the alert
-                           self.present(alert, animated: true, completion: nil)
-            } else {
-                let vc = self.storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
-                vc.firstName = firstName
-                vc.lastName = lastName
-                navigationController?.pushViewController(vc, animated: true)
-            }
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
+            vc.firstName = firstName
+            vc.lastName = lastName
+            navigationController?.pushViewController(vc, animated: true)
         }
     }
 
@@ -114,9 +99,26 @@ class SignUpViewController: UIViewController {
         do {
             try managedContext.save()
             users.append(user)
-            mails.append(email)
         } catch let error as NSError {
             print("Could not save")
         }
     }
+    
+//    func loadMails() {
+//
+//        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+//        let managedContext = appDelegate.persistentContainer.viewContext
+//
+//        let fetchRequest = NSFetchRequest<NSManagedObject>()
+//        do {
+//            let results = try managedContext.fetch(fetchRequest)
+//            if let mails = results as? [User] {
+//                for item in mails {
+//                    userMails.append(item.email ?? "")
+//                }
+//            }
+//        } catch let error as NSError {
+//            print("Could not fetch. \(error), \(error.userInfo)")
+//        }
+//    }
 }

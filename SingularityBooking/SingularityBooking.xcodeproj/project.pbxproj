@@ -18,6 +18,10 @@
 		026C33A22862E943002E75CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026C33A02862E943002E75CB /* LaunchScreen.storyboard */; };
 		026C33AA2862E993002E75CB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C33A92862E993002E75CB /* SignUpViewController.swift */; };
 		026C33AC2862E9A1002E75CB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C33AB2862E9A1002E75CB /* LoginViewController.swift */; };
+		029ECE7F2864258100A505EF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 029ECE7E2864258100A505EF /* Alamofire */; };
+		029ECE82286425C700A505EF /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029ECE81286425C700A505EF /* APIManager.swift */; };
+		029ECE84286428C300A505EF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029ECE83286428C300A505EF /* Constants.swift */; };
+		029ECE872864292900A505EF /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029ECE862864292900A505EF /* RegisterModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,9 @@
 		026C33A32862E943002E75CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		026C33A92862E993002E75CB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		026C33AB2862E9A1002E75CB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		029ECE81286425C700A505EF /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		029ECE83286428C300A505EF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		029ECE862864292900A505EF /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				029ECE7F2864258100A505EF /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +82,8 @@
 		026C33912862E942002E75CB /* SingularityBooking */ = {
 			isa = PBXGroup;
 			children = (
+				029ECE852864291C00A505EF /* Model */,
+				029ECE802864258F00A505EF /* Network */,
 				023B5E2C2862F244004A30C4 /* Helpers */,
 				026C33AD2862E9AF002E75CB /* Controllers */,
 				026C33922862E942002E75CB /* AppDelegate.swift */,
@@ -98,6 +108,23 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		029ECE802864258F00A505EF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				029ECE81286425C700A505EF /* APIManager.swift */,
+				029ECE83286428C300A505EF /* Constants.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		029ECE852864291C00A505EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				029ECE862864292900A505EF /* RegisterModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,6 +141,9 @@
 			dependencies = (
 			);
 			name = SingularityBooking;
+			packageProductDependencies = (
+				029ECE7E2864258100A505EF /* Alamofire */,
+			);
 			productName = SingularityBooking;
 			productReference = 026C338F2862E942002E75CB /* SingularityBooking.app */;
 			productType = "com.apple.product-type.application";
@@ -142,6 +172,9 @@
 				Base,
 			);
 			mainGroup = 026C33862862E942002E75CB;
+			packageReferences = (
+				029ECE7D2864258100A505EF /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 026C33902862E942002E75CB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -172,7 +205,10 @@
 				026C33AC2862E9A1002E75CB /* LoginViewController.swift in Sources */,
 				026C33972862E942002E75CB /* ViewController.swift in Sources */,
 				026C33932862E942002E75CB /* AppDelegate.swift in Sources */,
+				029ECE82286425C700A505EF /* APIManager.swift in Sources */,
 				026C33952862E942002E75CB /* SceneDelegate.swift in Sources */,
+				029ECE84286428C300A505EF /* Constants.swift in Sources */,
+				029ECE872864292900A505EF /* RegisterModel.swift in Sources */,
 				023B5E292862EE14004A30C4 /* ProfileViewController.swift in Sources */,
 				026C339D2862E942002E75CB /* SingularityBooking.xcdatamodeld in Sources */,
 				020B83B128630FD3003FD5B9 /* Utilities.swift in Sources */,
@@ -394,6 +430,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		029ECE7D2864258100A505EF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		029ECE7E2864258100A505EF /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 029ECE7D2864258100A505EF /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		026C339B2862E942002E75CB /* SingularityBooking.xcdatamodeld */ = {
