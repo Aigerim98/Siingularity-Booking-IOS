@@ -17,7 +17,6 @@
 		0252BD522864390900F568D2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0252BD512864390900F568D2 /* ProfileViewController.swift */; };
 		0252BD55286439EB00F568D2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0252BD54286439EB00F568D2 /* Constants.swift */; };
 		0252BD5728643A6400F568D2 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0252BD5628643A6400F568D2 /* LogInViewController.swift */; };
-		0252BD5A28643AF600F568D2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0252BD5928643AF600F568D2 /* Alamofire */; };
 		0252BD5C28643B1000F568D2 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0252BD5B28643B1000F568D2 /* APIManager.swift */; };
 		0252BD5F28643B3800F568D2 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0252BD5E28643B3800F568D2 /* LoginModel.swift */; };
 		0252BD6128643BC800F568D2 /* RegistrationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0252BD6028643BC800F568D2 /* RegistrationModel.swift */; };
@@ -62,7 +61,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0252BD5A28643AF600F568D2 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,7 +169,6 @@
 			);
 			name = Booking;
 			packageProductDependencies = (
-				0252BD5928643AF600F568D2 /* Alamofire */,
 			);
 			productName = Booking;
 			productReference = 029ECEE72864365B00A505EF /* Booking.app */;
@@ -202,7 +199,6 @@
 			);
 			mainGroup = 029ECEDE2864365B00A505EF;
 			packageReferences = (
-				0252BD5828643AF600F568D2 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 029ECEE82864365B00A505EF /* Products */;
 			projectDirPath = "";
@@ -403,6 +399,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -431,6 +428,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,25 +464,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		0252BD5828643AF600F568D2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		0252BD5928643AF600F568D2 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0252BD5828643AF600F568D2 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		029ECEF32864365B00A505EF /* Booking.xcdatamodeld */ = {

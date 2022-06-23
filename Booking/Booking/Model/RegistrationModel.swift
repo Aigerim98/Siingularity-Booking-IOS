@@ -14,9 +14,9 @@ struct Registration: Encodable {
     var password: String
     
     enum CodingKeys: String, CodingKey {
-        case firstName = "firstName"
-        case lastName = "lastName"
-        case email = "email"
-        case password = "password"
+        case firstName
+        case lastName
+        case email
+        case password
     }
 }

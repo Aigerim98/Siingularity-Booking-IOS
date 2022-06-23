@@ -7,7 +7,8 @@
 
 import Foundation
 
-let api = ""
-let baseURl = "https://singularitybooking.herokuapp.com/api/v1/"
-let registerUrl = "\(baseURl)register"
-let loginUrl = "\(baseURl)auth/login"
+enum Consants {
+    static let baseUrl = "https://singularitybooking.herokuapp.com/api/v1/"
+    static let registerUrl = "\(baseUrl)register"
+    static let loginUrl = "\(baseUrl)auth/login"
+}
