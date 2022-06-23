@@ -18,10 +18,14 @@
 		026C33A22862E943002E75CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026C33A02862E943002E75CB /* LaunchScreen.storyboard */; };
 		026C33AA2862E993002E75CB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C33A92862E993002E75CB /* SignUpViewController.swift */; };
 		026C33AC2862E9A1002E75CB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C33AB2862E9A1002E75CB /* LoginViewController.swift */; };
+<<<<<<< HEAD
 		029ECE7F2864258100A505EF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 029ECE7E2864258100A505EF /* Alamofire */; };
 		029ECE82286425C700A505EF /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029ECE81286425C700A505EF /* APIManager.swift */; };
 		029ECE84286428C300A505EF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029ECE83286428C300A505EF /* Constants.swift */; };
 		029ECE872864292900A505EF /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029ECE862864292900A505EF /* RegisterModel.swift */; };
+=======
+		39DF772A286365A5008F9BED /* BookRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DF7729286365A5008F9BED /* BookRoomViewController.swift */; };
+>>>>>>> 09847e93e474bc0a405d89a42a2899a16b0ca6d3
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,9 +42,13 @@
 		026C33A32862E943002E75CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		026C33A92862E993002E75CB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		026C33AB2862E9A1002E75CB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		029ECE81286425C700A505EF /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		029ECE83286428C300A505EF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		029ECE862864292900A505EF /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+=======
+		39DF7729286365A5008F9BED /* BookRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRoomViewController.swift; sourceTree = "<group>"; };
+>>>>>>> 09847e93e474bc0a405d89a42a2899a16b0ca6d3
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +112,7 @@
 				026C33AB2862E9A1002E75CB /* LoginViewController.swift */,
 				026C33A92862E993002E75CB /* SignUpViewController.swift */,
 				023B5E282862EE14004A30C4 /* ProfileViewController.swift */,
+				39DF7729286365A5008F9BED /* BookRoomViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -207,8 +216,12 @@
 				026C33932862E942002E75CB /* AppDelegate.swift in Sources */,
 				029ECE82286425C700A505EF /* APIManager.swift in Sources */,
 				026C33952862E942002E75CB /* SceneDelegate.swift in Sources */,
+<<<<<<< HEAD
 				029ECE84286428C300A505EF /* Constants.swift in Sources */,
 				029ECE872864292900A505EF /* RegisterModel.swift in Sources */,
+=======
+				39DF772A286365A5008F9BED /* BookRoomViewController.swift in Sources */,
+>>>>>>> 09847e93e474bc0a405d89a42a2899a16b0ca6d3
 				023B5E292862EE14004A30C4 /* ProfileViewController.swift in Sources */,
 				026C339D2862E942002E75CB /* SingularityBooking.xcdatamodeld in Sources */,
 				020B83B128630FD3003FD5B9 /* Utilities.swift in Sources */,
