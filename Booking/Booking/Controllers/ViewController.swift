@@ -23,8 +23,8 @@ class ViewController: UIViewController {
        }
        
        @IBAction func logInTapped(_ sender: Any) {
-//           let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-//           navigationController?.pushViewController(vc, animated: true)
+           let vc = self.storyboard?.instantiateViewController(withIdentifier: "LogInViewController") as! LogInViewController
+           navigationController?.pushViewController(vc, animated: true)
        }
        func setUpElelemnts() {
            Utilities.styleFilledButton(signUpButton)

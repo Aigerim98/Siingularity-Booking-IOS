@@ -9,6 +9,6 @@ import Foundation
 import UIKit
 
 struct Room {
-    var number: String!
-    var pictures: [UIImageView]!
+    var number: String
+    var pictures: String
 }

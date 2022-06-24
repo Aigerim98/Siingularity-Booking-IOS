@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		023025D528646A90005A6415 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023025D328646A90005A6415 /* TableViewCell.swift */; };
-		023025D628646A90005A6415 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 023025D428646A90005A6415 /* TableViewCell.xib */; };
-		023025DA28646B1A005A6415 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023025D828646B1A005A6415 /* CollectionViewCell.swift */; };
-		023025DB28646B1A005A6415 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 023025D928646B1A005A6415 /* CollectionViewCell.xib */; };
 		023025DE28646D12005A6415 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023025DD28646D12005A6415 /* Room.swift */; };
 		023025E028646F1E005A6415 /* BookRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023025DF28646F1E005A6415 /* BookRoomViewController.swift */; };
 		0252BD502864386200F568D2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0252BD4F2864386200F568D2 /* SignUpViewController.swift */; };
@@ -29,13 +25,14 @@
 		029ECEF72864365B00A505EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 029ECEF62864365B00A505EF /* Assets.xcassets */; };
 		029ECEFA2864365B00A505EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 029ECEF82864365B00A505EF /* LaunchScreen.storyboard */; };
 		029ECF02286436A300A505EF /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029ECF01286436A300A505EF /* Utilities.swift */; };
+		02ABE7CD2864F84200ED0949 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ABE7CC2864F84200ED0949 /* TableViewCell.swift */; };
+		02ABE7CF286509B700ED0949 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ABE7CE286509B700ED0949 /* File.swift */; };
+		02ABE7D1286528DB00ED0949 /* BookDateRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ABE7D0286528DB00ED0949 /* BookDateRoomViewController.swift */; };
+		02ABE7D328654D7E00ED0949 /* AvailableTimesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ABE7D228654D7E00ED0949 /* AvailableTimesTableViewCell.swift */; };
+		02ABE7D5286551CC00ED0949 /* SendBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ABE7D4286551CC00ED0949 /* SendBookViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		023025D328646A90005A6415 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		023025D428646A90005A6415 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
-		023025D828646B1A005A6415 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		023025D928646B1A005A6415 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		023025DD28646D12005A6415 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		023025DF28646F1E005A6415 /* BookRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRoomViewController.swift; sourceTree = "<group>"; };
 		0252BD4F2864386200F568D2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +52,11 @@
 		029ECEF92864365B00A505EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		029ECEFB2864365B00A505EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		029ECF01286436A300A505EF /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		02ABE7CC2864F84200ED0949 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		02ABE7CE286509B700ED0949 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		02ABE7D0286528DB00ED0949 /* BookDateRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDateRoomViewController.swift; sourceTree = "<group>"; };
+		02ABE7D228654D7E00ED0949 /* AvailableTimesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableTimesTableViewCell.swift; sourceTree = "<group>"; };
+		02ABE7D4286551CC00ED0949 /* SendBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendBookViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,24 +71,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		023025D728646A9A005A6415 /* Table */ = {
-			isa = PBXGroup;
-			children = (
-				023025D328646A90005A6415 /* TableViewCell.swift */,
-				023025D428646A90005A6415 /* TableViewCell.xib */,
-			);
-			path = Table;
-			sourceTree = "<group>";
-		};
-		023025DC28646B21005A6415 /* Collection View */ = {
-			isa = PBXGroup;
-			children = (
-				023025D828646B1A005A6415 /* CollectionViewCell.swift */,
-				023025D928646B1A005A6415 /* CollectionViewCell.xib */,
-			);
-			path = "Collection View";
-			sourceTree = "<group>";
-		};
 		0252BD53286439DD00F568D2 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +86,7 @@
 				0252BD5E28643B3800F568D2 /* LoginModel.swift */,
 				0252BD6028643BC800F568D2 /* RegistrationModel.swift */,
 				023025DD28646D12005A6415 /* Room.swift */,
+				02ABE7CE286509B700ED0949 /* File.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -125,8 +110,6 @@
 		029ECEE92864365B00A505EF /* Booking */ = {
 			isa = PBXGroup;
 			children = (
-				023025DC28646B21005A6415 /* Collection View */,
-				023025D728646A9A005A6415 /* Table */,
 				0252BD5D28643B2600F568D2 /* Model */,
 				0252BD53286439DD00F568D2 /* Network */,
 				029ECF03286436ED00A505EF /* Controllers */,
@@ -138,6 +121,8 @@
 				029ECEFB2864365B00A505EF /* Info.plist */,
 				029ECEF32864365B00A505EF /* Booking.xcdatamodeld */,
 				029ECF01286436A300A505EF /* Utilities.swift */,
+				02ABE7CC2864F84200ED0949 /* TableViewCell.swift */,
+				02ABE7D228654D7E00ED0949 /* AvailableTimesTableViewCell.swift */,
 			);
 			path = Booking;
 			sourceTree = "<group>";
@@ -150,6 +135,8 @@
 				0252BD512864390900F568D2 /* ProfileViewController.swift */,
 				0252BD5628643A6400F568D2 /* LogInViewController.swift */,
 				023025DF28646F1E005A6415 /* BookRoomViewController.swift */,
+				02ABE7D0286528DB00ED0949 /* BookDateRoomViewController.swift */,
+				02ABE7D4286551CC00ED0949 /* SendBookViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -219,10 +206,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				029ECEFA2864365B00A505EF /* LaunchScreen.storyboard in Resources */,
-				023025D628646A90005A6415 /* TableViewCell.xib in Resources */,
 				029ECEF72864365B00A505EF /* Assets.xcassets in Resources */,
 				029ECEF22864365B00A505EF /* Main.storyboard in Resources */,
-				023025DB28646B1A005A6415 /* CollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,17 +218,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				023025D528646A90005A6415 /* TableViewCell.swift in Sources */,
 				0252BD502864386200F568D2 /* SignUpViewController.swift in Sources */,
+				02ABE7CD2864F84200ED0949 /* TableViewCell.swift in Sources */,
 				029ECEEF2864365B00A505EF /* ViewController.swift in Sources */,
+				02ABE7D1286528DB00ED0949 /* BookDateRoomViewController.swift in Sources */,
+				02ABE7D5286551CC00ED0949 /* SendBookViewController.swift in Sources */,
+				02ABE7D328654D7E00ED0949 /* AvailableTimesTableViewCell.swift in Sources */,
 				0252BD6128643BC800F568D2 /* RegistrationModel.swift in Sources */,
 				0252BD5C28643B1000F568D2 /* APIManager.swift in Sources */,
+				02ABE7CF286509B700ED0949 /* File.swift in Sources */,
 				0252BD5F28643B3800F568D2 /* LoginModel.swift in Sources */,
 				0252BD5728643A6400F568D2 /* LogInViewController.swift in Sources */,
 				029ECEF52864365B00A505EF /* Booking.xcdatamodeld in Sources */,
 				029ECEEB2864365B00A505EF /* AppDelegate.swift in Sources */,
 				0252BD522864390900F568D2 /* ProfileViewController.swift in Sources */,
-				023025DA28646B1A005A6415 /* CollectionViewCell.swift in Sources */,
 				029ECF02286436A300A505EF /* Utilities.swift in Sources */,
 				029ECEED2864365B00A505EF /* SceneDelegate.swift in Sources */,
 				0252BD55286439EB00F568D2 /* Constants.swift in Sources */,

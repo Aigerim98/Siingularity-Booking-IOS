@@ -17,7 +17,8 @@ class SignUpViewController: UIViewController {
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var signUpButton: UIButton!
     @IBOutlet var errorLabel: UILabel!
-        
+    
+    private let networkManager: APIManager = .shared
     override func viewDidLoad() {
         super.viewDidLoad()
             
@@ -36,19 +37,20 @@ class SignUpViewController: UIViewController {
             let email = emailTextField.text!
             let password = passwordTextField.text!
             
-            let register = Registration(firstName: firstName, lastName: lastName, email: email, password: password)
-            print(register)
-            APIManager.shareInstance.registerAPI(register: register) {
-                (isSucess) in
-                if isSucess {
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
-        //            vc.firstName = firstName
-        //            vc.lastName = lastName
-                    self.navigationController?.pushViewController(vc, animated: true)
-                } else {
-                    print("try again")
-                }
-            }
+            let credentials = Registration(firstName: firstName, lastName: lastName, email: email, password: password)
+            networkManager.postRegister(credentials: credentials) { [weak self] result in
+                           guard let self = self else { return }
+                           switch result {
+                           case let .success(message):
+                               self.navigationController?.popToRootViewController(animated: true)
+//                               let vc = self.storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
+//                               vc.firstName = firstName
+//                               vc.lastName = lastName
+//                               self.navigationController?.pushViewController(vc, animated: true)
+                           case let .failure(error):
+                               print(error)
+                           }
+                       }
         
         }
     }
